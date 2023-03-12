@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Training Modules</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Training Modules</h1>
+    <div class="filter-container">
+      <label for="status-filter">Status:</label>
+      <select id="status-filter">
+        <option value="all">All</option>
+        <option value="stable">Stable</option>
+        <option value="beta">Beta</option>
+        <option value="alpha">Alpha</option>
+      </select>
+      <label for="video-filter">Videos:</label>
+      <input type="checkbox" id="video-filter">
+      <label for="video-filter">Available</label>
+    </div>
+  </header>
+
+  <main>
+    <div class="module">
+      <img class="module-image" src="https://picsum.photos/id/100/150/150" alt="Module Image">
+      <div class="module-info">
+        <h2 class="module-title">Module 1</h2>
+        <p class="module-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam felis eget odio fringilla blandit. Suspendisse potenti. Fusce vel turpis eu diam aliquam vehicula.</p>
+        <div class="module-links">
+          <a class="module-repo" href="#">Repository</a>
+          <a class="module-page" href="#">Rendered Page</a>
+          <a class="module-playlist" href="#">Video Playlist</a>
+        </div>
+        <div class="module-status stable">Stable</div>
+      </div>
+    </div>
+
+    <div class="module">
+      <img class="module-image" src="https://picsum.photos/id/200/150/150" alt="Module Image">
+      <div class="module-info">
+        <h2 class="module-title">Module 2</h2>
+        <p class="module-description">Sed in augue nibh. Praesent malesuada libero et tortor placerat rhoncus. Duis nec lectus tellus. Proin mattis bibendum felis nec hendrerit.</p>
+        <div class="module-links">
+          <a class="module-repo" href="#">Repository</a>
+          <a class="module-page" href="#">Rendered Page</a>
+        </div>
+        <div class="module-status alpha">Alpha</div>
+      </div>
+    </div>
+
+    <div class="module">
+      <img class="module-image" src="https://picsum.photos/id/300/150/150" alt="Module Image">
+      <div class="module-info">
+        <h2 class="module-title">Module 3</h2>
+        <p class="module-description">Donec vel tellus sed tortor vehicula sodales. Duis ac malesuada lorem. Donec molestie velit velit, ut pellentesque arcu pharetra ac.</p>
+        <div class="module-links">
+          <a class="module-repo" href="#">Repository</a>
+          <a class="module-page" href="#">Rendered Page</a>
+          <a class="module-playlist" href="#">Video Playlist</a>
+        </div>
+        <div class="module-status beta">Beta</div>
+      </div>
+    </div>
+
+    <div class="module">
+        <img class="module-image" src="https://picsum.photos/id/400/150/150" alt="Module Image">
+        <div class="module-info">
+          <h2 class="module-title">Module 4</h2>
+          <p class="module-description">Vivamus fermentum finibus leo, ac auctor sapien rhoncus eu. Duis eget leo at sapien tristique tempus. Nam ac arcu et neque sodales maximus ut in lorem.</p>
+          <div class="module-links">
+            <a class="module-repo" href="#">Repository</a>
+            <a class="module-page" href="#">Rendered Page</a>
+            <a class="module-playlist" href="#">Video Playlist</a>
+          </div>
+          <div class="module-status stable">Stable</div>
+        </div>
+      </div>
+  
+    </main>
+  </body>
+  
+  </html>
+  

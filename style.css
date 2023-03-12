@@ -1,0 +1,291 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 0.5rem;
+}
+
+/* Main Styles */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.module {
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.module-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.module-info {
+  padding: 1rem;
+}
+
+.module-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.module-description {
+  margin-bottom: 1rem;
+}
+
+.module-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #333;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.module-links a:hover {
+  background-color: #ccc;
+}
+
+.module-status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.stable {
+  color: green;
+  background-color: #d2f2d2;
+}
+
+.beta {
+  color: orange;
+  background-color: #fde3a7;
+}
+
+.alpha {
+  color: red;
+  background-color: #f9c2c2;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  .module {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .module {
+    width: 100%;
+  }
+}
+
+
+/* Module styling */
+
+.module {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.module-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.module-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.module-description {
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.module-links {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.module-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.module-link:hover {
+  background-color: black;
+  color: white;
+}
+
+.module-status {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stable {
+  background-color: green;
+  color: white;
+}
+
+.beta {
+  background-color: yellow;
+  color: black;
+}
+
+.alpha {
+  background-color: red;
+  color: white;
+}
+
+/* Filter styling */
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.filter-label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.filter-select {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+.filter-checkbox {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Page styling */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #F4F4F4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .module {
+    flex-direction: column;
+  }
+
+  .module-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .module-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .module-link {
+    margin-bottom: 1rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-label {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
