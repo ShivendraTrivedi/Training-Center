@@ -3,86 +3,654 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training Modules</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 
 <body>
   <header>
-    <h1>Training Modules</h1>
-    <div class="filter-container">
-      <label for="status-filter">Status:</label>
+    <h1>HSF Software Training Center</h1>
+    <div class="filters">
+      <label for="playlist-filter">Filter by Playlist:</label>
+      <select id="playlist-filter">
+        <option value="all">All</option>
+        <option value="yes">Has Playlist</option>
+        <option value="no">No Playlist</option>
+      </select>
+
+      <label for="status-filter">Filter by Status:</label>
       <select id="status-filter">
         <option value="all">All</option>
         <option value="stable">Stable</option>
         <option value="beta">Beta</option>
         <option value="alpha">Alpha</option>
       </select>
-      <label for="video-filter">Videos:</label>
-      <input type="checkbox" id="video-filter">
-      <label for="video-filter">Available</label>
     </div>
   </header>
 
+  <h1 style="text-align: center;">IDEA</h1>
+
+  <p id="intro">Training in software and computing are essential ingredients for the success of any HEP experiment. As
+    most
+    experiments have similar basic prerequisites (Unix shell, Python, C++, …) we want to join our efforts and
+    create one introductory software training curriculum that serves HEP newcomers the software skills needed as
+    they enter the field, and in parallel, instill best practices for writing software.
+    The curriculum is comprised of a set of standardized modules, so that students can focus on what is most
+    relevant to them.</p>
+  <h1>Basics</h1>
   <main>
     <div class="module">
-      <img class="module-image" src="https://picsum.photos/id/100/150/150" alt="Module Image">
+      <img src="http://www.astropy.org/ccd-reduction-and-photometry-guide/v/dev/_static/logo.png"
+        alt="Module 1 Hero Image">
       <div class="module-info">
-        <h2 class="module-title">Module 1</h2>
-        <p class="module-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam felis eget odio fringilla blandit. Suspendisse potenti. Fusce vel turpis eu diam aliquam vehicula.</p>
-        <div class="module-links">
-          <a class="module-repo" href="#">Repository</a>
-          <a class="module-page" href="#">Rendered Page</a>
-          <a class="module-playlist" href="#">Video Playlist</a>
-        </div>
-        <div class="module-status stable">Stable</div>
+        <h2>The UNIX Shell</h2>
+        <p>A guide through the basics of the file systems and the shell.</p>
+        <ul>
+          <li><a href="https://github.com/swcarpentry/shell-novice" target="_blank">Contribute!</a></li>
+          <li><a href="https://swcarpentry.github.io/shell-novice/" target="_blank">Start Learning now!</a>
+          </li>
+        </ul>
+        <span class="status stable">Stable</span>
       </div>
     </div>
 
     <div class="module">
-      <img class="module-image" src="https://picsum.photos/id/200/150/150" alt="Module Image">
+      <img src="https://learn.astropy.org/tutorials/nboutput/User-Defined-Model.ipynb_20_0.png"
+        alt="Module 2 Hero Image">
       <div class="module-info">
-        <h2 class="module-title">Module 2</h2>
-        <p class="module-description">Sed in augue nibh. Praesent malesuada libero et tortor placerat rhoncus. Duis nec lectus tellus. Proin mattis bibendum felis nec hendrerit.</p>
-        <div class="module-links">
-          <a class="module-repo" href="#">Repository</a>
-          <a class="module-page" href="#">Rendered Page</a>
-        </div>
-        <div class="module-status alpha">Alpha</div>
+        <h2>Version controlling with git</h2>
+        <p>Track code changes, undo mistakes, collaborate. This module is a must.</p>
+        <ul>
+          <li><a href="https://github.com/swcarpentry/git-novice" target="_blank">Contribute!</a></li>
+          <li><a href="https://swcarpentry.github.io/git-novice/" target="_blank">Start Learning now!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
       </div>
     </div>
 
     <div class="module">
-      <img class="module-image" src="https://picsum.photos/id/300/150/150" alt="Module Image">
+      <img src="https://learn.astropy.org/tutorials/nboutput/FITS-images.ipynb_20_1.png" alt="Module 3 Hero Image">
       <div class="module-info">
-        <h2 class="module-title">Module 3</h2>
-        <p class="module-description">Donec vel tellus sed tortor vehicula sodales. Duis ac malesuada lorem. Donec molestie velit velit, ut pellentesque arcu pharetra ac.</p>
-        <div class="module-links">
-          <a class="module-repo" href="#">Repository</a>
-          <a class="module-page" href="#">Rendered Page</a>
-          <a class="module-playlist" href="#">Video Playlist</a>
-        </div>
-        <div class="module-status beta">Beta</div>
+        <h2>Programming with python</h2>
+        <p>Get started with an incredibly popular programming language.</p>
+        <ul>
+          <li><a href="https://github.com/swcarpentry/python-novice-inflammation" target="_blank">Contribute!</a></li>
+          <li><a href="https://swcarpentry.github.io/python-novice-inflammation/" target="_blank">Start
+              Learning now!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
       </div>
     </div>
 
     <div class="module">
-        <img class="module-image" src="https://picsum.photos/id/400/150/150" alt="Module Image">
-        <div class="module-info">
-          <h2 class="module-title">Module 4</h2>
-          <p class="module-description">Vivamus fermentum finibus leo, ac auctor sapien rhoncus eu. Duis eget leo at sapien tristique tempus. Nam ac arcu et neque sodales maximus ut in lorem.</p>
-          <div class="module-links">
-            <a class="module-repo" href="#">Repository</a>
-            <a class="module-page" href="#">Rendered Page</a>
-            <a class="module-playlist" href="#">Video Playlist</a>
-          </div>
-          <div class="module-status stable">Stable</div>
-        </div>
+      <img src="https://learn.astropy.org/tutorials/nboutput/FITS-tables.ipynb_18_0.png" alt="Module 4 Hero Image">
+      <div class="module-info">
+        <h2>SSH</h2>
+        <p>Introduction to the <a href="https://en.wikipedia.org/wiki/Secure_Shell">Secure Shell (SSH)</a></p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-ssh-webpage/" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-ssh-webpage/" target="_blank">Start
+              Learning now!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
       </div>
-  
-    </main>
-  </body>
-  
-  </html>
-  
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/color-excess.ipynb_9_0.png" alt="Module 5 Hero Image">
+      <div class="module-info">
+        <h2>Machine learning</h2>
+        <p>Get behind the buzzword and teach machines to work for you intelligently!</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-ml-webpage" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-ml-webpage/" target="_blank">Start Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLKZ9c4ONm-VmHsMKImIDEMsZI1Vp0UY-Z" target="_blank">Watch
+              the videos!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/SpectralCubeReprojectExample.ipynb_21_1.png"
+        alt="Module 6 Hero Image">
+      <div class="module-info">
+        <h2>Matplotlib for HEP</h2>
+        <p>Make science prettier with beautiful plots!</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-matplotlib" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-matplotlib/" target="_blank">Start Learning
+              now!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/1-SpectroscopicTraceTutorial.ipynb_6_0.png"
+        alt="Module 7 Hero Image">
+      <div class="module-info">
+        <h2>ROOT</h2>
+        <p>The most famous data analysis framework used in HEP.</p>
+        <ul>
+          <li><a href="https://github.com/root-project/software-carpentry" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://github.com/root-project/software-carpentry" target="_blank">Start Learning
+              now!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+  </main>
+
+  <h1>Software Development and Deployment</h1>
+  <main>
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/plot-catalog.ipynb_27_1.png" alt="Module 8 Hero Image">
+      <div class="module-info">
+        <h2>Version controlling with git</h2>
+        <p>Track code changes, undo mistakes, collaborate. This module is a must.</p>
+        <ul>
+          <li><a href="https://github.com/swcarpentry/git-novice" target="_blank">Contribute!</a></li>
+          <li><a href="https://swcarpentry.github.io/git-novice/" target="_blank">Start Learning now!</a>
+          </li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/FITS-cubes.ipynb_11_0.png" alt="Module 9 Hero Image">
+      <div class="module-info">
+        <h2>Advanced git</h2>
+        <p>Learn to work with branches and more with this interactive webpage.</p>
+        <ul>
+          <li><a href="https://github.com/pcottle/learnGitBranching" target="_blank">Contribute!</a></li>
+          <li><a href="https://learngitbranching.js.org/?locale=en_US" target="_blank">Start Learning now!</a>
+          </li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/Models-Quick-Fit.ipynb_9_1.png" alt="Module 10 Hero Image">
+      <div class="module-info">
+        <h2>CI/CD (gitlab)</h2>
+        <p><a href="https://docs.gitlab.com/ee/ci/">Continuous integration and deployment</a> with <a
+            href="https://about.gitlab.com/">gitlab</a>.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-cicd" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-cicd/" target="_blank">Start Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=C9auGFgIHns&list=PLKZ9c4ONm-VmmTObyNWpz4hB3Hgx8ZWSb"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="http://www.astropy.org/ccd-reduction-and-photometry-guide/v/dev/_static/logo.png"
+        alt="Module 11 Hero Image">
+      <div class="module-info">
+        <h2>CI/CD (github)</h2>
+        <p><a href="https://docs.gitlab.com/ee/ci/">Continuous integration and deployment</a> with <a
+            href="https://github.com/features/actions">github actions</a>.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-cicd-github" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-cicd-github/" target="_blank">Start
+              Learning now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=-Xd5D6xKugk&list=PLKZ9c4ONm-Vl3kwsjrNRlPYNQFbPO2no4"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/User-Defined-Model.ipynb_20_0.png"
+        alt="Module 12 Hero Image">
+      <div class="module-info">
+        <h2>Docker</h2>
+        <p>Introduction to the <a href="https://www.docker.com/">docker</a> container image system.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-docker" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-docker/index.html" target="_blank">Start
+              Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Qr42pEtio-Q&list=PLKZ9c4ONm-VnqD5oN2_8tXO0Yb1H_s0sj"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/PVDiagramPlotting.ipynb_6_1.png"
+        alt="Module 13 Hero Image">
+      <div class="module-info">
+        <h2>Singularity</h2>
+        <p>Introduction to containerization with <a href="https://apptainer.org/">Singularity/Apptainer</a>.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-singularity-webpage" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-singularity-webpage/" target="_blank">Start
+              Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=g0cCErlveiI&list=PLKZ9c4ONm-VkxWW98Gcn9H6WwykMiqtnF"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/SpectralCubeReprojectExample.ipynb_21_1.png"
+        alt="Module 14 Hero Image">
+      <div class="module-info">
+        <h2>Unit testing</h2>
+        <p><a href="https://en.wikipedia.org/wiki/Unit_testing">Unit testing</a> in python.</p>
+        <ul>
+          <li><a href="https://github.com/carpentries-incubator/python-testing" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="http://carpentries-incubator.github.io/python-testing/" target="_blank">Start Learning
+              now!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/color-excess.ipynb_9_0.png" alt="Module 15 Hero Image">
+      <div class="module-info">
+        <h2>Level up your python</h2>
+        <p>Advanced bits of python (testing, debugging, logging, and more)</p>
+        <ul>
+          <li><a href="https://github.com/henryiii/level-up-your-python" target="_blank">Contribute!</a></li>
+          <li><a href="https://henryiii.github.io/level-up-your-python/notebooks/0%20Intro.html" target="_blank">Start
+              Learning
+              now!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+  </main>
+
+  <h1>C++ corner</h1>
+  <main>
+    <div class="module">
+      <img
+        src="https://learn.astropy.org/tutorials/nboutput/3-Trace_Extract_Wavelength-CalibrateSpectrum.ipynb_14_1.png"
+        alt="Module 16 Hero Image">
+      <div class="module-info">
+        <h2>HEP C++ Course</h2>
+        <p>A full introduction to C++ based on a series of slides and exercises.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/cpluspluscourse" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://github.com/hsf-training/cpluspluscourse#-getting-the-latest-pdf" target="_blank">Start
+              Learning
+              now!</a></li>
+          <li><a href="https://github.com/hsf-training/cpluspluscourse#-video-recordings--events" target="_blank">Watch
+              the videos!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/2-WavelengthCalibration.ipynb_7_0.png"
+        alt="Module 17 Hero Image">
+      <div class="module-info">
+        <h2>Build systems: cmake</h2>
+        <p>Building code is hard. CMake makes it easier.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-cmake-webpage" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-cmake-webpage/" target="_blank">Start
+              Learning
+              now!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+  </main>
+
+  <h1>Machine learning and other analysis tools</h1>
+  <main>
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/1-SpectroscopicTraceTutorial.ipynb_6_0.png"
+        alt="Module 18 Hero Image">
+      <div class="module-info">
+        <h2>Machine learning</h2>
+        <p>Get behind the buzzword and teach machines to work for you intelligently!</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-ml-webpage" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-ml-webpage" target="_blank">Start Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLKZ9c4ONm-VmHsMKImIDEMsZI1Vp0UY-Z" target="_blank">Watch
+              the videos!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/UVES.ipynb_89_0.png" alt="Module 19 Hero Image">
+      <div class="module-info">
+        <h2>Machine learning on GPU</h2>
+        <p>Speed up your machine learning using massive parallelization!</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-ml-gpu-webpage" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-ml-gpu-webpage" target="_blank">Start
+              Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLKZ9c4ONm-VnfKk7XrVUa-V42lUdMrB6M" target="_blank">Watch
+              the videos!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+  </main>
+
+  <h1>HEP specific tools</h1>
+
+  <main>
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/units-and-integration.ipynb_5_0.png"
+        alt="Module 20 Hero Image">
+      <div class="module-info">
+        <h2>Scikit-HEP</h2>
+        <p>A collection of packages for particle physics analyses in Python.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-scikit-hep-webpage" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-scikit-hep-webpage/" target="_blank">Start
+              Learning now!</a>
+          </li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/redshift-plot.ipynb_2_0.png" alt="Module 21 Hero Image">
+      <div class="module-info">
+        <h2>ROOT</h2>
+        <p>The most famous data analysis framework used in HEP.</p>
+        <ul>
+          <li><a href="https://github.com/root-project/software-carpentry" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://github.com/root-project/software-carpentry" target="_blank">Start Learning
+              now!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/quantities.ipynb_26_1.png" alt="Module 22 Hero Image">
+      <div class="module-info">
+        <h2>UnROOT</h2>
+        <p>Open ROOT files in Julia!</p>
+        <ul>
+          <li><a href="https://github.com/Moelf/HSF_Julia_Tutorial" target="_blank">Contribute!</a></li>
+          <li><a href="https://moelf.github.io/HSF_Julia_Tutorial/dev/notebooks/unroot_tutorial/" target="_blank">Start
+              Learning now!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/plot-catalog.ipynb_27_1.png" alt="Module 23 Hero Image">
+      <div class="module-info">
+        <h2>Reproducible analyses with REANA</h2>
+        <p>Run containerised data analysis pipelines on remote compute clouds.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-reana-webpage" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-reana-webpage/" target="_blank">Start
+              Learning now!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+  </main>
+
+  <h1>Analysis preservation</h1>
+  <main>
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/synthetic-images.ipynb_5_1.png" alt="Module 24 Hero Image">
+      <div class="module-info">
+        <h2>Version controlling with git</h2>
+        <p>Track code changes, undo mistakes, collaborate. This module is a must.</p>
+        <ul>
+          <li><a href="https://github.com/swcarpentry/git-novice" target="_blank">Contribute!</a></li>
+          <li><a href="http://swcarpentry.github.io/git-novice" target="_blank">Start Learning now!</a>
+          </li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/Models-Quick-Fit.ipynb_9_1.png" alt="Module 25 Hero Image">
+      <div class="module-info">
+        <h2>CI/CD (gitlab)</h2>
+        <p><a href="https://docs.gitlab.com/ee/ci/">Continuous integration and deployment</a> with <a
+            href="https://about.gitlab.com/">gitlab</a.< /p>
+            <ul>
+              <li><a href="https://github.com/hsf-training/hsf-training-cicd" target="_blank">Contribute!</a></li>
+              <li><a href="https://hsf-training.github.io/hsf-training-cicd/" target="_blank">Start
+                  Learning now!</a></li>
+              <li><a href="https://www.youtube.com/watch?v=C9auGFgIHns&list=PLKZ9c4ONm-VmmTObyNWpz4hB3Hgx8ZWSb"
+                  target="_blank">Watch the videos!</a></li>
+            </ul>
+            <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/FITS-images.ipynb_20_1.png" alt="Module 26 Hero Image">
+      <div class="module-info">
+        <h2>CI/CD (github)</h2>
+        <p><a href="https://docs.gitlab.com/ee/ci/">Continuous integration and deployment</a> with <a
+            href="https://github.com/features/actions">github actions</a>.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-cicd-github" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-cicd-github/" target="_blank">Start
+              Learning now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=-Xd5D6xKugk&list=PLKZ9c4ONm-Vl3kwsjrNRlPYNQFbPO2no4"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/FITS-cubes.ipynb_11_0.png" alt="Module 27 Hero Image">
+      <div class="module-info">
+        <h2>Docker</h2>
+        <p>Introduction to the <a href="https://www.docker.com/">docker </a>ontainer image system.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-docker" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-docker/index.html" target="_blank">Start
+              Learning now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Qr42pEtio-Q&list=PLKZ9c4ONm-VnqD5oN2_8tXO0Yb1H_s0sj"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/FITS-tables.ipynb_18_0.png" alt="Module 28 Hero Image">
+      <div class="module-info">
+        <h2>Singularity</h2>
+        <p>Introduction to containerization with <a href="https://apptainer.org/">Singularity/Apptainer</a>.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-singularity-webpage" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-singularity-webpage/" target="_blank">Start
+              Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=g0cCErlveiI&list=PLKZ9c4ONm-VkxWW98Gcn9H6WwykMiqtnF"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/gaia-galactic-orbits.ipynb_30_0.png"
+        alt="Module 29 Hero Image">
+      <div class="module-info">
+        <h2>Unit testing</h2>
+        <p><a href="https://en.wikipedia.org/wiki/Unit_testing">Unit testing</a> in python.</p>
+        <ul>
+          <li><a href="https://github.com/carpentries-incubator/python-testing" target="_blank">Contribute!</a></li>
+          <li><a href="http://carpentries-incubator.github.io/python-testing/" target="_blank">Start Learning
+              now!</a></li>
+        </ul>
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="http://www.astropy.org/ccd-reduction-and-photometry-guide/v/dev/_static/logo.png"
+        alt="Module 30 Hero Image">
+      <div class="module-info">
+        <h2>Reproducible analyses with REANA</h2>
+        <p>Run containerised data analysis pipelines on remote compute clouds.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-reana-webpage" target="_blank">Contribute!</a>
+          </li>
+          <li><a href="https://hsf-training.github.io/hsf-training-reana-webpage/" target="_blank">Start
+              Learning
+              now!</a></li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+  </main>
+
+  <h1>Miscellaneous</h1>
+  <main>
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/User-Defined-Model.ipynb_20_0.png"
+        alt="Module 31 Hero Image">
+      <div class="module-info">
+        <h2>A simple analysis</h2>
+        <p>A simple analysis using CMS open data.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-cms-analysis-webpage"
+              target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-cms-analysis-webpage/" target="_blank">Start Learning
+              now!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=gplMywJAFDI&list=PLKZ9c4ONm-Vk0wnDKaaovoEkOk3PVdL0V"
+              target="_blank">Watch the videos!</a></li>
+        </ul>
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+  </main>
+
+
+  <h1>Planned, in early development, or archived</h1>
+  <main>
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/PVDiagramPlotting.ipynb_6_1.png"
+        alt="Module 32 Hero Image">
+      <div class="module-info">
+        <h2>uproot</h2>
+        <p>Reading and writing ROOT files without having to install ROOT.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-uproot-webpage" target="_blank">Contribute!</a></li>
+          <li><a href="https://hsf-training.github.io/hsf-training-uproot-webpage/" target="_blank">Start
+              Learning now!</a>
+          </li>
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/color-excess.ipynb_9_0.png" alt="Module 33 Hero Image">
+      <div class="module-info">
+        <h2>Distributed file systems and grid computing</h2>
+        <p></p>
+
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/2-WavelengthCalibration.ipynb_7_0.png"
+        alt="Module 34 Hero Image">
+      <div class="module-info">
+        <h2>Parallel programming</h2>
+        <p></p>
+
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/1-SpectroscopicTraceTutorial.ipynb_6_0.png"
+        alt="Module 35 Hero Image">
+      <div class="module-info">
+        <h2>alpaka</h2>
+        <p><a href="https://alpaka.readthedocs.io/en/latest/index.html">alpaka</a> is a header-only C++
+          abstraction library for accelerator development.</p>
+        <ul>
+          <li><a href="https://github.com/hsf-training/hsf-training-alpaka-webpage" target="_blank">Contribute!</a></li>
+
+        </ul>
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/UVES.ipynb_89_0.png" alt="Module 36 Hero Image">
+      <div class="module-info">
+        <h2>Workflows & reproducibility</h2>
+        <p>E.g. yadage and reana</p>
+
+        <span class="status beta">Beta</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/units-and-integration.ipynb_5_0.png"
+        alt="Module 37 Hero Image">
+      <div class="module-info">
+        <h2>Documentation</h2>
+        <p>sphinx, doxygen, etc.</p>
+
+        <span class="status alpha">Alpha</span>
+      </div>
+    </div>
+
+    <div class="module">
+      <img src="https://learn.astropy.org/tutorials/nboutput/redshift-plot.ipynb_2_0.png" alt="Module 38 Hero Image">
+      <div class="module-info">
+        <h2>Event generation and MC</h2>
+        <p>pythia, sherpa, madgraph, etc.</p>
+
+        <span class="status stable">Stable</span>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
